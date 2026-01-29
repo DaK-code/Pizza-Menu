@@ -13,6 +13,7 @@ const Pizza = () => {
             {m.name} <br /> <br />
             <img src={`${m.photoName}`} alt={`${m.name}`} /> <br />
             {m.ingredients}
+            <p>Price : {m.price}$</p>
           </li>
         ))}
       </ul>
