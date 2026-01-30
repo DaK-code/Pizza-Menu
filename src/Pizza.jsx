@@ -6,13 +6,17 @@ const Pizza = () => {
 
   return (
     <div className="container">
-      <h4>This is our pizza menu</h4>
       <ul id="all-menu">
         {pizzaMenu.map((m) => (
-          <li key={m.id}>
-            {m.name} <br /> <br />
-            <img src={`${m.photoName}`} alt={`${m.name}`} /> <br />
-            {m.ingredients}
+        
+          <li  key={m.id} className={m.soldOut? "soldOut": "none"}>
+            <img src={`${m.photoName}`} alt={`${m.name}`} />
+
+            <span className="description">
+              <p className="menuName">{m.name}</p>
+              <p className="ingredient">{m.ingredients}</p>
+              {m.soldOut ? <p>Sold Out</p> : <p>{m.price}$</p>}
+            </span>
           </li>
         ))}
       </ul>
