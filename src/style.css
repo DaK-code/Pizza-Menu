@@ -46,10 +46,51 @@ body {
 }
 .header h1{
   color: #edc84b;
+  margin-bottom: 25px;
+}
+.header h1::after{
+  content: "";
+  display: block;
+  position: relative;
+  right:55px;
+  top:-14px;
+  width: 50px;
+  height: 2px;
+  background-color: #edc84b;
+}
+.header h1::before{
+  content: "";
+  display: block;
+  position: relative;
+  left:260px;
+  top:17px;
+  width: 50px;
+  height: 2px;
+  background-color: #edc84b;
 }
 .header span{
   font-weight: bold;
   font-size: 14px;
+  margin-bottom: 10px;
+  
+}
+.header span::after{
+  content: "";
+  display: block;
+  position: relative;
+  width: 67px;
+  height: 2px;
+  top:5px;
+  background-color: #252525;
+}
+.header span::before{
+  content: "";
+  display: block;
+  position: relative;
+  width: 67px;
+  height: 2px;
+  bottom:5px;
+  background-color: #252525;
 }
 li{
     width: 250px;
