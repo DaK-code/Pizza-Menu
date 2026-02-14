@@ -19,29 +19,127 @@ body {
   min-height: 100vh;
   padding: 3.2rem;
   padding-bottom: 6rem;
+  display: flex;
+  justify-content: center;
+
 }
 
 .container{
-    width: 550px;
-    margin: auto;
-    border: 0.5px solid #e4d5b9;
+    width: 600px;
     border-radius: 5px;
-    box-shadow: 0.5px 0.5px;
     padding-left: 10px;
     padding-top: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
     
 }
+.header{
+  display: flex;
+  height: 120px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 90px;
+  font-size: 11px;
+  
+
+}
+.header h1{
+  color: #edc84b;
+  margin-bottom: 25px;
+}
+.header h1::after{
+  content: "";
+  display: block;
+  position: relative;
+  right:55px;
+  top:-14px;
+  width: 50px;
+  height: 2px;
+  background-color: #edc84b;
+}
+.header h1::before{
+  content: "";
+  display: block;
+  position: relative;
+  left:260px;
+  top:17px;
+  width: 50px;
+  height: 2px;
+  background-color: #edc84b;
+}
+.header span{
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+  
+}
+.header span::after{
+  content: "";
+  display: block;
+  position: relative;
+  width: 67px;
+  height: 2px;
+  top:5px;
+  background-color: #252525;
+}
+.header span::before{
+  content: "";
+  display: block;
+  position: relative;
+  width: 67px;
+  height: 2px;
+  bottom:5px;
+  background-color: #252525;
+}
 li{
-    width: 150px
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+}
+.description{
+  width: 200px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  
+}
+.menuName{
+  font-weight: bold;
+}
+.ingredient{
+  font-style: italic;
 }
 img{
-    width: 120px
+    width: 100px;
+}
+.soldOut{
+  filter: grayscale(100%) sepia(20%) brightness(0.7)
 }
 #all-menu{
     list-style-type: none;
     display: flex;
-    justify-content : center;
+    justify-content : space-between;
     flex-wrap: wrap;
-    gap: 15px
+    gap: 20px
     
+}
+button{
+  width: 90px;
+  height: 30px;
+  background-color: #edc84b;
+  color: #252525;
+  border: none;
+  cursor: pointer;
+}
+.footer{
+  display: flex;
+  height: 70px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-right: 90px;
 }
